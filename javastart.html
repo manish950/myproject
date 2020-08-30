@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <title>proffesinal manish</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            
+        }
+        
+    </style>
+    <body>
+        <h1 id="headingprof">0</h1>
+        <input  id="inputamt" type="text">
+      <button id="btncom">+</button>  
+      <script>
+            const headingEl = document.querySelector("#headingprof");
+            let totalExp = 0;
+            headingEl.textcontent = totalExp;
+    function addTotalexp()
+     { 
+        const inputElement = document.querySelector("#inputamt");
+        const textAmount = inputElement.value;
+        
+        
+        const expense = parseInt(textAmount , 10);
+
+        totalExp = totalExp + expense;
+        
+        
+        
+        console.log(totalExp);
+        headingEl.textContent = totalExp;  
+          
+          }
+           const element = document.querySelector("#btncom");
+           
+       
+           element.addEventListener( "click",addTotalexp ,false );
+         
+      </script>      
+    </body>
+</html>
